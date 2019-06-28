@@ -31,7 +31,6 @@ const myLocalizationTheme = {
 const localization = new Vasadu(myLocalizationTheme, 'no');
 
 // Now we can access deep nested values with completed translations:
-
 localization.si('buttonText.publish'); // Publiser
 ```
 
