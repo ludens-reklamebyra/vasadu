@@ -18,14 +18,14 @@ const myLocalizationTheme = {
   buttonText: {
     publish: {
       en: 'Publish',
-      no: 'Publiser
+      no: 'Publiser'
     }
   },
   intro: {
     en: 'Welcome to our site',
-    no: 'Velkommen til vår side
+    no: 'Velkommen til vår side'
   }
-}
+};
 
 // Initialize Vasadu class, and giving it our theme and wanted locale.
 const localization = new Vasadu(myLocalizationTheme, 'no');
@@ -38,4 +38,5 @@ localization.si('buttonText.publish'); // Publiser
 ## Contribute
 
 If you want to contribute in any way, feel free to create issues, or send pull requests!
+
 # vasadu
