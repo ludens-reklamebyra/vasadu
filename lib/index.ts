@@ -27,6 +27,10 @@ export default class Vasadu {
     const values = objectPath.get(this.tree, path);
     const emptyTranslation = 'Missing translation';
 
+    if (!values) {
+      throw new Error(`The path "${path}" does not exist.`);
+    }
+
     if (!(this.locale in values)) {
       console.warn(`Missing translation for path: '${path}'`);
       return emptyTranslation;

@@ -40,4 +40,18 @@ describe('vasadu', () => {
       new Vasadu([{ no: 'hey', en: 'test' }], '');
     }).toThrow();
   });
+
+  it('should throw if object key does not exists', () => {
+    expect(() => {
+      new Vasadu(
+        {
+          name: {
+            no: 'Navn',
+            en: 'Name'
+          }
+        },
+        'no'
+      ).si('test.test');
+    }).toThrow(`The path "test.test" does not exist.`);
+  });
 });
